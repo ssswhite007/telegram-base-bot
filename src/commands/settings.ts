@@ -53,42 +53,42 @@ export const handleSettings = async (ctx: Context) => {
       { text: '--- AUTO BUY ---', callback_data: 'settings_header' }
     ],
     [
-      { text: 'Disabled', callback_data: 'settings_autoBuy_disable' },
-      { text: '0.10 SOL', callback_data: 'settings_autoBuy_enable' }
+      { text: '🚫 Disabled', callback_data: 'settings_autoBuy_disable' },
+      { text: '💰 0.10 SOL', callback_data: 'settings_autoBuy_enable' }
     ],
     [ { text: '--- BUY BUTTONS CONFIG ---', callback_data: 'settings_header' } ],
     [
-      { text: '🔘 Left: 1.0 SOL', callback_data: 'settings_button_buy' },
-      { text: '🔘 Right: 5.0 SOL', callback_data: 'settings_button_sell' }
+      { text: '💰 Left: 1.0 SOL', callback_data: 'settings_button_buy' },
+      { text: '💰 Right: 5.0 SOL', callback_data: 'settings_button_sell' }
     ],
     [ { text: '--- SELECT BUTTONS CONFIG ---', callback_data: 'settings_header' } ],
     [
-        { text: '🔘 Left: 25%', callback_data: 'settings_button_buy' },
-        { text: '🔘 Right: 100%', callback_data: 'settings_button_sell' }
+        { text: '💰 Left: 25%', callback_data: 'settings_button_buy' },
+        { text: '💰 Right: 100%', callback_data: 'settings_button_sell' }
     ],
     [
-      { text: 'Sell Initial Disabled', callback_data: 'settings_sellProtection' },
+      { text: '🚫 Sell Initial Disabled', callback_data: 'settings_sellProtection' },
     ],
     [ { text: '--- SLIPPAGE CONFIG ---', callback_data: 'settings_header' } ],
     [
-      { text: 'Buy: 10%', callback_data: 'settings_slippage_buy' },
-      { text: 'Sell: 10%', callback_data: 'settings_slippage_sell' },
+      { text: '💰 Buy: 10%', callback_data: 'settings_slippage_buy' },
+      { text: '💰 Sell: 10%', callback_data: 'settings_slippage_sell' },
     ],
     [
       { text: 'Max Price Impact: 25%', callback_data: 'settings_slippage_impact' }
     ],
     [ { text: '--- MEV PROTECT ---', callback_data: 'settings_header' } ],
     [
-      { text: 'Turbo', callback_data: 'settings_mev_turbo' }
+      { text: '💱 Turbo', callback_data: 'settings_mev_turbo' }
     ],
     [ { text: '--- TRANSACTION PRIORITY ---', callback_data: 'settings_header' } ],
     [
-      { text: 'Medium', callback_data: 'settings_priority_medium' },
+      { text: '💱 Medium', callback_data: 'settings_priority_medium' },
       { text: '0.00100 SOL', callback_data: 'settings_priority_high' },
     ],
     [ { text: '--- SELL PROTECTION ---', callback_data: 'settings_header' } ],
     [
-      { text: 'Enabled', callback_data: 'settings_sellProtection' },
+      { text: '🟢 Enabled', callback_data: 'settings_sellProtection' },
     ],
     [{ text: 'Close', callback_data: 'home' }]
   ]);

@@ -5,6 +5,7 @@ import { handleHome } from './commands/home';
 import { handleSettings } from './commands/settings';
 import { handleWallet } from './commands/wallet';
 import { handleBuy } from './commands/buy';
+import { handleHelp } from './commands/help';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -27,10 +28,15 @@ bot.command('wallet', handleWallet);
 // Buy command
 bot.command('buy', handleBuy);
 
+// Help command
+bot.command('help', handleHelp);
+bot.action('help', handleHelp);
+
 // Set up menu commands
 bot.telegram.setMyCommands([
   { command: 'home', description: 'view trades and open main menu' },
   { command: "settings", description: "customize your bot" },
+  { command: "help", description: "get help and information" },
 ]);
 
 // Set bot description

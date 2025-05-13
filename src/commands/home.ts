@@ -16,7 +16,7 @@ For more info on your wallet and to export your seed phrase, tap "Wallet" below.
     parse_mode: "HTML",
     reply_markup: {
       inline_keyboard: [
-        [{ text: "Buy", callback_data: "buy" },{ text: "Fund", callback_data: "fund" }],
+        [{ text: "Buy", callback_data: "buy" },{ text: "Sell & Manage", callback_data: "fund" }],
         [{ text: "Help", callback_data: "help" }, { text: "Refer Friends", callback_data: "referFriends" }],
         [{ text: "Wallet", callback_data: "wallet" }, { text: "Settings", callback_data: "settings" }],
         [{ text: "Refresh", callback_data: "refresh" }],
