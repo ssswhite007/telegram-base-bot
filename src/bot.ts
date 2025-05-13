@@ -30,13 +30,12 @@ bot.command('buy', handleBuy);
 
 // Help command
 bot.command('help', handleHelp);
-bot.action('help', handleHelp);
 
 // Set up menu commands
 bot.telegram.setMyCommands([
   { command: 'home', description: 'view trades and open main menu' },
   { command: "settings", description: "customize your bot" },
-  { command: "help", description: "get help and information" },
+  { command: "help", description: "tips and frequently asked questions" },
 ]);
 
 // Set bot description
